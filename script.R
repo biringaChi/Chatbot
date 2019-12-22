@@ -1,5 +1,5 @@
 # Building a chatbot using Twitter Customer Response data from major companies
-# more string cleanig to be done
+# more string cleaning to be done 
 
 library(tidyverse)
 library(quanteda)
