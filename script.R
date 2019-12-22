@@ -134,8 +134,6 @@ answer <- as.character(p)
 # predict
 paste("Answer:", answer)
 
-
-
 # Test data
 sample.action.test <- action[1000:1050, 1]
 test.tokens <- tokens(sample.action.test$text, what="word", remove_numbers = TRUE,  remove_punct = TRUE, 
@@ -146,7 +144,6 @@ test.tokens.dfm <- dfm(test.tokens)
 test.tokens.dfm <- dfm_select(test.tokens.dfm, pattern = sample.action.tokens.dfm, selection = "keep")
 test.tokens.matrix <- as.matrix(test.tokens.dfm)
 
-
 test.tokens.df <- cbind(reaction = sample.reaction$text, convert(test.tokens.dfm, to = "data.frame"))
 
 predictions <- predict(svm.model, test.tokens.matrix)
@@ -154,17 +151,3 @@ response <- as.character(predictions)
 
 # Predict
 paste("Response:", response)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
