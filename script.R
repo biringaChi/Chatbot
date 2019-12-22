@@ -1,5 +1,5 @@
 # Building a chatbot using Twitter Customer Response data from major companies
-# More string cleanig to be done....
+# More string cleanig to be done...
 
 library(tidyverse)
 library(quanteda)
@@ -9,10 +9,10 @@ library(stringr)
 library(doSNOW)
 library(e1071)
 
+# sampling 10,000 observations
 twitter.df <- read_csv("data/twcs.csv", col_names = TRUE, n_max = 10000)
 
 # Building action-reaction pairs
-
 # Action
 action <- twitter.df %>% 
   filter(inbound == TRUE) %>% 
