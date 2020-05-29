@@ -1,4 +1,4 @@
 ### Chatbot
 A machine learning-powered customer response chatbot using Twitter data set of top companies.
-This bot achieved a significant human discernible response.
+The bot was able to predict 3 correct responses from 5 sequential questions
 
